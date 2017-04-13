@@ -40,3 +40,10 @@ thinegan@Thinegans-MacBook-Pro:~/mygit/gitest (master) $
 Example
 
 
+##Git Branch Naming Convention :
+
+1. Branch Type for grouping
+
+bug       - Code changes linked to a known issue.
+feature   - New feature.
+hotfix    - Quick fixes to the codebase.
