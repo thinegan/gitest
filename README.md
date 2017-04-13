@@ -23,7 +23,16 @@ git checkout master && git reset --hard HEAD && git clean -f && git pull origin 
 sudo cp gitreset /usr/local/bin/
 sudo chmod +x /usr/local/bin/gitreset
 
-To Test :
+Test Example :
+
+thinegan@Thinegans-MacBook-Pro:~/mygit/gitest (test1) $gitreset 
+Switched to branch 'master'
+Your branch is up-to-date with 'origin/master'.
+HEAD is now at 5509a5e shortcut
+From github.com:thinegan/gitest
+ * branch            HEAD       -> FETCH_HEAD
+Already up-to-date.
+thinegan@Thinegans-MacBook-Pro:~/mygit/gitest (master) $
 
 ```
 
