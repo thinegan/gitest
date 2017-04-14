@@ -39,7 +39,7 @@ thinegan@Thinegans-MacBook-Pro:~/mygit/gitest (master) $
 ## Intergrate Github with Trello
 Example
 
-Git Branch Naming Convention :
+### Git Branch Naming Convention :
 
 1. Branch Type for grouping
 bug       - Code changes linked to a known issue.
@@ -54,19 +54,24 @@ hotfix/dockerfile-base-image
 bug/login-ie
 
 
-Git set alias :
-I use alot of git push origin HEAD
-* HEAD - current branch.
+
+```
+Git set alias on frequently used command.
+Eg. "git push origin HEAD"
+
 
 Setup Alias :
 git config --global alias.pu 'push origin HEAD'
+Test : "git pu"   // git push origin HEAD
 
-Test :
 git commit -am "Set Alias"
-git pu
+
 
 Git set diff :
 git config --global diff.tool vimdiff
 git config --global difftool.prompt false
 git config --global alias.d difftool
+Test : "git d"    // git vimdiff
+
+```
 
