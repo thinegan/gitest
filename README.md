@@ -16,7 +16,7 @@ On Mac, You can place it in your env path
 vim gitreset
 
 #!/bin/bash
-git checkout master && git reset --hard HEAD && git clean -f && git pull origin HEAD
+git checkout master && git reset --hard HEAD && git clean -f && git pull --all
 
 :wq (save & quit)
 
