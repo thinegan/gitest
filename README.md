@@ -39,7 +39,7 @@ thinegan@Thinegans-MacBook-Pro:~/mygit/gitest (master) $
 ## Intergrate Github with Trello
 Example
 
-### Git Branch Naming Convention :
+### Git Basic Setup :
 
 1. Branch Type for grouping
 bug       - Code changes linked to a known issue.
@@ -53,24 +53,31 @@ feature/renderer-cookies
 hotfix/dockerfile-base-image
 bug/login-ie
 
-
-
 ```
+Eg. To create and checkout new branch,
+$ git checkout -b hotfix/command-prompt
+
+Eg. Merging,
+$ git checkout master                               // change to the master branch  
+$ git merge --no-ff feature-id                      // makes sure to create a commit object during merge
+$ git push origin master                            // push merge changes
+$ git branch -d feature-id                          // deletes the local branch
+$ git push origin :feature-id                       // deletes the remote branch
+
+
 Git set alias on frequently used command.
 Eg. "git push origin HEAD"
 
 
 Setup Alias :
-git config --global alias.pu 'push origin HEAD'
+$ git config --global alias.pu 'push origin HEAD'
 Test : "git pu"   // git push origin HEAD
-
-git commit -am "Set Alias"
 
 
 Git set diff :
-git config --global diff.tool vimdiff
-git config --global difftool.prompt false
-git config --global alias.d difftool
+$ git config --global diff.tool vimdiff
+$ git config --global difftool.prompt false
+$ git config --global alias.d difftool
 Test : "git d"    // git vimdiff
 
 ```
