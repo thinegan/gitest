@@ -8,7 +8,7 @@ https://git-scm.com/book/en/v1/Git-Basics-Tips-and-Tricks
 https://github.com/bobthecow/git-flow-completion/wiki/Install-Bash-git-completion
 
 ## Reset all from your git directory and go back origin/master branch
-git checkout master && git reset --hard HEAD && git clean -f && git pull origin HEAD
+git checkout master && git reset --hard HEAD && git clean -f && git pull --all
 
 On Mac, You can place it in your env path
 
