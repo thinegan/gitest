@@ -53,3 +53,17 @@ feature/renderer-cookies
 hotfix/dockerfile-base-image
 bug/login-ie
 
+
+Git set alias :
+I use alot of git push origin HEAD
+* HEAD - current branch.
+
+Setup Alias :
+git config --global alias.pu 'push origin HEAD'
+
+Test :
+git commit -am "Set Alias"
+git pu
+
+
+
